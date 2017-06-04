@@ -6,6 +6,7 @@ import time
 from operator import add
 from datetime import datetime
 from geopy.geocoders import Nominatim
+from tabulate import tabulate
 APP_NAME = "BDA-HW3 103590450"
 conf = pyspark.SparkConf().setAppName(APP_NAME)
 conf = conf.setMaster("local[*]")
@@ -54,8 +55,9 @@ if __name__ == '__main__':
 
     output += 'Lists the top checked-in venues (most popular):\n'
     output += 'time:%.2f\n' % (time.time() - ts)
-    for i in result1.take(10):
-        output += str(i) + '\n'
+    output += tabulate(result1.take(10),
+                       ['venues id', 'count of checking and name']) + '\n'
+
     output += line
 
     ts = time.time()
@@ -64,8 +66,10 @@ if __name__ == '__main__':
 
     output += 'Lists the most popular categories:\n'
     output += 'time:%.2f\n' % (time.time() - ts)
-    for i in categories.take(10):
-        output += str(i) + '\n'
+    output += tabulate(categories.take(10),
+                       ['categories', 'count']) + '\n'
+    # for i in categories.take(10):
+    #     output += str(i) + '\n'
     output += line
 
     ts = time.time()
@@ -73,8 +77,9 @@ if __name__ == '__main__':
         add).sortBy(lambda item: item[1], ascending=False)
     output += 'Lists the top checked-in users:\n'
     output += 'time:%.2f\n' % (time.time() - ts)
-    for i in user.take(10):
-        output += str(i) + '\n'
+    output += tabulate(user.take(10),
+                       ['user id', 'count of checking']) + '\n'
+
     output += line
 
     ts = time.time()
@@ -82,8 +87,8 @@ if __name__ == '__main__':
         add).sortBy(lambda item: item[1], ascending=False)
     output += 'Lists the most popular time for check-ins:\n'
     output += 'time:%.2f\n' % (time.time() - ts)
-    for i in checkin_time.take(20):
-        output += str(i) + '\n'
+    output += tabulate(checkin_time.take(10),
+                       ['Time', 'count of checking']) + '\n'
     output += line
 
     ts = time.time()
@@ -92,7 +97,8 @@ if __name__ == '__main__':
 
     output += 'Optional functions:\n'
     output += 'time:%.2f\n' % (time.time() - ts)
-    for item in countries.take(5):
-        output += '%s [%d]\n' % (geolocator.reverse(item[0]), item[1])
+    table = [[geolocator.reverse(item[0]), item[1]]
+             for item in countries.take(10)]
+    output += tabulate(table, ['location detail', 'count of checking']) + '\n'
     print(output, file=text_file)
     text_file.close()

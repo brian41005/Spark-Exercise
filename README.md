@@ -5,6 +5,6 @@ NTUT BDA HW3 103590450
 如果沒有要在notebook上執行就不需安裝findspark
 也可直接查看html
 ```sh
-$ sudo pip3 install geopy findspark
+$ sudo pip3 install geopy findspark tabulate
 $ spark-submit HW3.py
 ```

@@ -1,70 +1,75 @@
 Lists the top checked-in venues (most popular):
-time:2.25
-('4b0bd124f964a520e03323e3', (23790, '<Changi International Airport (SIN)>'))
-('4c775cda93faa093a2c5f0fb', (10870, '<Cineleisure Orchard>'))
-('4b058818f964a520a7b122e3', (9649, '<VivoCity>'))
-('4b08e700f964a520421323e3', (8578, '<ION Orchard>'))
-('4b5da988f964a520ae6529e3', (8454, '<nex>'))
-('50874d10e4b0fa42fc6cc568', (6902, '<ITE College Central>'))
-('4b058817f964a5203eb122e3', (6796, '<Jurong Point>'))
-('4bb9c1a6935e9521d3512790', (6469, '<Bugis Junction>'))
-('4b058815f964a520afb022e3', (6277, '<Plaza Singapura>'))
-('4b189466f964a52049d423e3', (6259, '<313@Somerset>'))
+time:2.28
+venues id                 count of checking and name
+------------------------  -----------------------------------------------
+4b0bd124f964a520e03323e3  (23790, '<Changi International Airport (SIN)>')
+4c775cda93faa093a2c5f0fb  (10870, '<Cineleisure Orchard>')
+4b058818f964a520a7b122e3  (9649, '<VivoCity>')
+4b08e700f964a520421323e3  (8578, '<ION Orchard>')
+4b5da988f964a520ae6529e3  (8454, '<nex>')
+50874d10e4b0fa42fc6cc568  (6902, '<ITE College Central>')
+4b058817f964a5203eb122e3  (6796, '<Jurong Point>')
+4bb9c1a6935e9521d3512790  (6469, '<Bugis Junction>')
+4b058815f964a520afb022e3  (6277, '<Plaza Singapura>')
+4b189466f964a52049d423e3  (6259, '<313@Somerset>')
 ####################################################################################################
 Lists the most popular categories:
-time:0.80
-('Mall', 200240)
-('Train Station', 57643)
-('Coffee Shop', 51816)
-('Café', 48711)
-('Food Court', 47332)
-('Home (private)', 45151)
-('Building', 44447)
-('Asian Restaurant', 41370)
-('General College & University', 35717)
-('General Entertainment', 35349)
+time:0.79
+categories                      count
+----------------------------  -------
+Mall                           200240
+Train Station                   57643
+Coffee Shop                     51816
+Café                            48711
+Food Court                      47332
+Home (private)                  45151
+Building                        44447
+Asian Restaurant                41370
+General College & University    35717
+General Entertainment           35349
 ####################################################################################################
 Lists the top checked-in users:
-time:1.11
-('23116182', 10013)
-('942443', 6737)
-('5295751', 4369)
-('15852099', 4284)
-('5406597', 4176)
-('951387', 4138)
-('5488934', 4125)
-('10057162', 4034)
-('4706660', 4021)
-('8355536', 3707)
+time:1.10
+  user id    count of checking
+---------  -------------------
+ 23116182                10013
+   942443                 6737
+  5295751                 4369
+ 15852099                 4284
+  5406597                 4176
+   951387                 4138
+  5488934                 4125
+ 10057162                 4034
+  4706660                 4021
+  8355536                 3707
 ####################################################################################################
 Lists the most popular time for check-ins:
-time:3.13
-('11:00~12:00', 123743)
-('10:00~11:00', 109244)
-('12:00~13:00', 101916)
-(' 5:00~ 6:00', 93842)
-(' 9:00~10:00', 89397)
-(' 6:00~ 7:00', 89210)
-(' 4:00~ 5:00', 87843)
-(' 7:00~ 8:00', 85688)
-(' 8:00~ 9:00', 84058)
-('13:00~14:00', 76449)
-(' 3:00~ 4:00', 67036)
-(' 2:00~ 3:00', 61943)
-('14:00~15:00', 61167)
-(' 1:00~ 2:00', 59931)
-(' 0:00~ 1:00', 57657)
-('15:00~16:00', 53826)
-('23:00~24:00', 43781)
-('16:00~17:00', 39566)
-('17:00~18:00', 23073)
-('22:00~23:00', 20765)
+time:3.03
+Time           count of checking
+-----------  -------------------
+11:00~12:00               123743
+10:00~11:00               109244
+12:00~13:00               101916
+5:00~ 6:00                 93842
+9:00~10:00                 89397
+6:00~ 7:00                 89210
+4:00~ 5:00                 87843
+7:00~ 8:00                 85688
+8:00~ 9:00                 84058
+13:00~14:00                76449
 ####################################################################################################
 Optional functions:
-time:0.21
-Blk 106A, Punggol Field, Punggol, Northeast, Singapore [82]
-619, Walking Trail, Jurong West, Southwest, Singapore [74]
-Fengshan Primary School, 307, Bedok North Road, Bedok, Southeast, 469680, Singapore [72]
-288, Tampines Street 22, Northeast, 520288, Singapore [69]
-206B, Compassvale Drive, Sengkang, Northeast, Singapore [67]
+time:0.16
+location detail                                                                             count of checking
+----------------------------------------------------------------------------------------  -------------------
+Blk 106A, Punggol Field, Punggol, Northeast, Singapore                                                     82
+619, Walking Trail, Jurong West, Southwest, Singapore                                                      74
+Fengshan Primary School, 307, Bedok North Road, Bedok, Southeast, 469680, Singapore                        72
+288, Tampines Street 22, Northeast, 520288, Singapore                                                      69
+206B, Compassvale Drive, Sengkang, Northeast, Singapore                                                    67
+Blk 113, Pang Sua Park Connector, Bukit Panjang, Northwest, Singapore                                      65
+Yio Chu Kang Primary School, 1, Hougang Street 51, Hougang, Northeast, 538720, Singapore                   64
+519A MSCP, Woodlands Avenue 5, Woodlands, Northwest, Singapore                                             57
+462, Tampines Street 44, Tampines, Northeast, Singapore                                                    55
+236, Yishun Ring Road, Yishun, Northwest, Singapore                                                        50
 
