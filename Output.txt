@@ -1,5 +1,5 @@
 Lists the top checked-in venues (most popular):
-time:2.28
+time:8.45
 venues id                 count of checking and name
 ------------------------  -----------------------------------------------
 4b0bd124f964a520e03323e3  (23790, '<Changi International Airport (SIN)>')
@@ -14,7 +14,7 @@ venues id                 count of checking and name
 4b189466f964a52049d423e3  (6259, '<313@Somerset>')
 ####################################################################################################
 Lists the most popular categories:
-time:0.79
+time:8.59
 categories                      count
 ----------------------------  -------
 Mall                           200240
@@ -29,7 +29,7 @@ General College & University    35717
 General Entertainment           35349
 ####################################################################################################
 Lists the top checked-in users:
-time:1.10
+time:5.25
   user id    count of checking
 ---------  -------------------
  23116182                10013
@@ -44,7 +44,7 @@ time:1.10
   8355536                 3707
 ####################################################################################################
 Lists the most popular time for check-ins:
-time:3.03
+time:8.38
 Time           count of checking
 -----------  -------------------
 11:00~12:00               123743
@@ -59,7 +59,7 @@ Time           count of checking
 13:00~14:00                76449
 ####################################################################################################
 Optional functions:
-time:0.16
+time:3.82
 location detail                                                                             count of checking
 ----------------------------------------------------------------------------------------  -------------------
 Blk 106A, Punggol Field, Punggol, Northeast, Singapore                                                     82
@@ -67,7 +67,7 @@ Blk 106A, Punggol Field, Punggol, Northeast, Singapore                          
 Fengshan Primary School, 307, Bedok North Road, Bedok, Southeast, 469680, Singapore                        72
 288, Tampines Street 22, Northeast, 520288, Singapore                                                      69
 206B, Compassvale Drive, Sengkang, Northeast, Singapore                                                    67
-Blk 113, Pang Sua Park Connector, Bukit Panjang, Northwest, Singapore                                      65
+Blk 113, Pang Sua Park Connector, Bukit Panjang, Northwest, 689379, Singapore                              65
 Yio Chu Kang Primary School, 1, Hougang Street 51, Hougang, Northeast, 538720, Singapore                   64
 519A MSCP, Woodlands Avenue 5, Woodlands, Northwest, Singapore                                             57
 462, Tampines Street 44, Tampines, Northeast, Singapore                                                    55

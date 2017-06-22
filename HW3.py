@@ -36,7 +36,7 @@ def get_name(line):
 
 
 if __name__ == '__main__':
-    text_file = open("Output.txt", "w")
+    text_file = open("Output.txt", "w", encoding='utf-8')
     output = ''
     line = '#' * 100 + '\n'
     checking_local_dedup = sc.textFile('4sq_data/checking_local_dedup.txt')
